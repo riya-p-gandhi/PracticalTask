@@ -54,7 +54,7 @@ class FirstScreen extends React.Component {
             fetch("https://api.nasa.gov/planetary/apod?start_date="+this.state.start_apiDate+"&end_date="+this.state.end_apiDate+"&api_key=2SmZMUTdL9F3gKztnYufhC7nckjSAoGy0bg6gicz", data)
                 .then((response) => response.json())
                 .then((responseData) => {
-                  console.log("category: ",responseData); 
+                 // console.log("category: ",responseData); 
                     if (responseData.code === 400) {
                       alert(responseData.msg)
                       this.setState({ isLoading: false, });
