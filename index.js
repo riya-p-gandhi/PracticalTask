@@ -3,7 +3,8 @@
  */
 
 import {AppRegistry} from 'react-native';
-import App from './App';
+import FirstScreen from './FirstScreen';
 import {name as appName} from './app.json';
+import MyStack from './Main';
 
-AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent(appName, () => MyStack);
